@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 export const Statistics = ({ title, stats }) => {
   return (
     <StatsBox>
-      <StatsTitle>{title}</StatsTitle>
+      {title && <StatsTitle>{title}</StatsTitle>}
       <StatsList>
         {stats.map(stat => {
           return (
